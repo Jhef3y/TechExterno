@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.net.techsoft.techsoftmobile.ConsultaProd"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Produtos: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/azulTech"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtFiltro"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorGray"
+            android:layout_margin="10dp"
+            android:paddingStart="5dp"
+            android:inputType="textCapSentences" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listVProdConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+</LinearLayout>
